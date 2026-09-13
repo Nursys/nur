@@ -1,0 +1,26 @@
+/* ================================================
+   DATA: Personajes importantes
+   ================================================ */
+window.PERSONAJES_DATA = [
+  { role: "Compañero / primer califa", name: "Abu Bakr as-Siddiq", ar: "أبو بكر الصديق", desc: "El compañero más cercano al Profeta ﷺ, el primero de los hombres libres en abrazar el Islam y el primer califa (632-634). Recibió el sobrenombre de 'as-Siddiq' (el veraz) por confirmar la ascensión nocturna. Acompañó al Profeta ﷺ en la emigración a Medina.", auth: "Corán, hadiz y sirá" },
+  { role: "Compañero / segundo califa", name: "'Umar ibn al-Jattab", ar: "عمر بن الخطاب", desc: "Conocido como 'al-Faruq' (el que distingue la verdad de la falsedad). Segundo califa (634-644); bajo su mandato se expandió el imperio hacia Siria, Iraq, Egipto y Persia, y se estableció el calendario islámico.", auth: "Corán, hadiz y sirá" },
+  { role: "Compañero / tercer califa", name: "'Uthman ibn 'Affan", ar: "عثمان بن عفان", desc: "Tercer califa (644-656), conocido por su generosidad y por la unificación del texto del Corán en un único mushaf. Fue asesinado durante su mandato, episodio trágico de la historia temprana.", auth: "Corán, hadiz y sirá" },
+  { role: "Compañero / cuarto califa", name: "'Ali ibn Abi Talib", ar: "علي بن أبي طالب", desc: "Primo y yerno del Profeta ﷺ (esposo de Fatimah). Cuarto califa (656-661) y padre de Hasan y Husayn, figuras centrales para la comunidad musulmana. Su gobierno coincidió con las primeras divisiones internas.", auth: "Corán, hadiz y sirá" },
+  { role: "Esposa del Profeta ﷺ", name: "Khadijah bint Khuwaylid", ar: "خديجة بنت خويلد", desc: "La primera esposa del Profeta ﷺ y la primera persona en abrazar el Islam. Su apoyo y consuelo fueron decisivos en los primeros años de la revelación. El Profeta ﷺ nunca dejó de recordarla y honrarla.", auth: "Hadiz y sirá" },
+  { role: "Esposa del Profeta ﷺ / transmisora", name: "'A'ishah bint Abi Bakr", ar: "عائشة بنت أبي بكر", desc: "Esposa del Profeta ﷺ e hija de Abu Bakr. Una de las mayores transmisoras de hadices: se le atribuyen más de dos mil narraciones. Fuente clave del conocimiento de la vida del Profeta ﷺ y del fiqh.", auth: "Hadiz y sirá" },
+  { role: "Hija del Profeta ﷺ", name: "Fatimah az-Zahra'", ar: "فاطمة الزهراء", desc: "La hija menor del Profeta ﷺ, esposa de 'Ali y madre de Hasan y Husayn. Es conocida como 'az-Zahra' (la radiante) y goza de gran estima entre los musulmanes.", auth: "Hadiz y sirá" },
+  { role: "Compañero / primer almuédano", name: "Bilal ibn Rabah", ar: "بِلال بن رَبَاح", desc: "Esclavo abisinio liberado que fue elegido por el Profeta ﷺ como primer almuédano (el que llama a la oración) en Medina. Su historia de fe ante la persecución es ejemplo de la igualdad entre los creyentes.", auth: "Hadiz y sirá" },
+  { role: "Compañero persa", name: "Salman al-Farisi", ar: "سلمان الفارسي", desc: "Compañero de origen persa. Sus consejos fueron decisivos en la batalla del foso (ahzab). La tradición narra su larga búsqueda de la verdad antes de conocer al Profeta ﷺ.", auth: "Tradición y hadiz" },
+  { role: "Compañero", name: "Hamzah ibn 'Abd al-Muttalib", ar: "حمزة بن عبد المطلب", desc: "Tío del Profeta ﷺ, conocido como 'el León de Allah' por su valentía. Musulmán temprano, murió en la batalla de Uhud (625).", auth: "Hadiz y sirá" },
+  { role: "Compañero", name: "Zayd ibn Harithah", ar: "زيد بن حارثة", desc: "Compañero fiel del Profeta ﷺ, a quien el Profeta ﷺ consideraba hijo antes de que la revelación aboliera el parentesco por adopción. Es el único compañero mencionado por su nombre en el Corán (Al-Ahzab 33:37).", auth: "Corán, hadiz y sirá" },
+  { role: "Compañera", name: "Umm Salamah", ar: "أم سلمة", desc: "Esposa del Profeta ﷺ y transmisora de muchos hadices. Figura de sabiduría cuyos dichos son citados en los libros de hadiz.", auth: "Hadiz" },
+  { role: "Compañero / exégeta", name: "Abdullah ibn 'Abbas", ar: "عبد الله بن عباس", desc: "Primo del Profeta ﷺ, llamado 'el intérprete del Corán' por ser una de las mayores autoridades en tafsir (exégesis coránica).", auth: "Hadiz y tradición" },
+  { role: "Compañera", name: "Asma' bint Abi Bakr", ar: "أسماء بنت أبي بكر", desc: "Hija de Abu Bakr y hermana de 'A'ishah. Se recuerda su valentía y ayuda a su familia durante la emigración. Conocida como 'Dhu an-Nitaqayn' (la de los dos cinturones).", auth: "Hadiz y sirá" },
+  { role: "Compañero", name: "Abdullah ibn 'Umar", ar: "عبد الله بن عمر", desc: "Hijo de 'Umar ibn al-Jattab, conocido por su estricto seguimiento de la Sunnah y por transmitir muchos hadices.", auth: "Hadiz y sirá" },
+  { role: "Compañera", name: "Hafsa bint 'Umar", ar: "حفصة بنت عمر", desc: "Hija de 'Umar y esposa del Profeta ﷺ. Custodió un ejemplar del Corán durante la recopilación del mushaf bajo 'Uthman.", auth: "Hadiz y tradición" },
+  { role: "Compañero", name: "Abu Hurayrah", ar: "أبو هريرة", desc: "Compañero conocido por la gran cantidad de hadices que transmitió. Es una de las fuentes de narración más citadas en al-Bujari y Muslim.", auth: "Hadiz" }
+];
+
+window.PERSONAJES_META = {
+  note: "La información está contrastada con el Corán, hadices auténticos y obras de sirá reconocidas. Los detalles exclusivamente tradicionales se indican como tales."
+};

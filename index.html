@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nur — Plataforma Islámica Educativa Moderna | Aprende sobre el Islam</title>
+  <meta name="description" content="Nur es una plataforma educativa islámica moderna para jóvenes y quienes quieren aprender sobre el Islam: Corán, profetas, oración, duas, historia y mucho más. Gratis y fiable.">
+  <meta property="og:title" content="Nur — Aprende sobre el Islam">
+  <meta property="og:description" content="Conoce tu religión. Fortalece tu fe. Corán, profetas, oración, duas y cultura islámica en una plataforma moderna.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E☪%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<div id="app">
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar site-header">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">ن</span>
+        <span>Nur<small>Plataforma Islámica</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Principal">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="pages/nombres-allah.html">Allah</a>
+        <a href="pages/profetas.html">Profetas</a>
+        <a href="pages/quran.html">Corán</a>
+        <a href="pages/oracion.html">Oración</a>
+        <a href="pages/wudu.html">Wudu</a>
+        <a href="pages/duas.html">Duas</a>
+        <a href="pages/dhikr.html">Dhikr</a>
+        <a href="pages/historia.html">Historia</a>
+        <a href="pages/quiz.html">Quiz</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#" class="icon-btn open-search" title="Buscar (Ctrl+K)" aria-label="Buscar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg></a>
+        <a href="pages/favoritos.html" class="icon-btn hide-mobile" title="Favoritos" aria-label="Favoritos"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></a>
+        <a href="pages/comenzar.html" class="btn btn-gold btn-sm hide-mobile">Empezar</a>
+        <button class="icon-btn theme-toggle" title="Cambiar tema" aria-label="Cambiar tema"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+        <button class="icon-btn menu-burger" aria-label="Menú" aria-expanded="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== MOBILE MENU ===== -->
+  <nav class="mobile-menu" aria-label="Menú móvil">
+    <a href="index.html" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Inicio</a>
+    <a href="pages/nombres-allah.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/></svg>Nombres de Allah</a>
+    <a href="pages/profetas.html">Profetas</a>
+    <a href="pages/quran.html">Corán</a>
+    <a href="pages/oracion.html">Oración</a>
+    <a href="pages/wudu.html">Wudu</a>
+    <a href="pages/duas.html">Duas</a>
+    <a href="pages/dhikr.html">Dhikr</a>
+    <a href="pages/pilares.html">Pilares del Islam</a>
+    <a href="pages/ramadan.html">Ramadán</a>
+    <a href="pages/historia.html">Historia</a>
+    <a href="pages/quiz.html">Quiz</a>
+    <a href="pages/comenzar.html">Empezar aquí</a>
+    <div class="mobile-recent" id="mobile-recent" data-recent="">
+
+    </div>
+    <div class="mm-actions">
+      <a href="#" class="btn btn-gold open-search" style="width:100%">Buscar contenido</a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="reveal visible">
+        <span class="hero-badge"><span class="dot"></span> Plataforma educativa · 2026</span>
+        <h1>
+          <span class="line">Conoce tu religión.</span>
+          <span class="line gold-text">Fortalece tu fe.</span>
+        </h1>
+        <p class="lead">Aprende sobre el Islam de forma sencilla, clara y fiable: el Corán, los profetas, la oración, las duas, la historia y mucho más. Contenido verificado con fuentes auténticas, diseñado para jóvenes musulmanes y para quien quiere descubrir esta fe.</p>
+        <div class="hero-cta">
+          <a href="pages/comenzar.html" class="btn btn-gold">Comenzar a aprender</a>
+          <a href="pages/pilares.html" class="btn btn-ghost">Explorar el Islam</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><strong><span data-count="99">0</span></strong><small>Nombres de Allah</small></div>
+          <div class="hero-stat"><strong><span data-count="25">0</span>+</strong><small>Profetas</small></div>
+          <div class="hero-stat"><strong><span data-count="114">0</span></strong><small>Suras del Corán</small></div>
+          <div class="hero-stat"><strong><span data-count="18">0</span></strong><small>Secciones de aprendizaje</small></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="geo-stage">
+          <div class="geo-ring"></div>
+          <div class="geo-ring r2"></div>
+          <div class="geo-ring r3"></div>
+          <div class="geo-core"><div class="star"></div></div>
+          <div class="geo-float f1"><b>+ Tawhid</b> <span>Unicidad</span></div>
+          <div class="geo-float f2"><b>+ 99 nombres</b> <span>Ar-Rahman</span></div>
+          <div class="geo-float f3">بِسْمِ اللهِ</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DASHBOARD ===== -->
+  <section class="section" style="padding-top:30px">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Tu panel personal</span>
+          <h2 class="section-title">Tu progreso de aprendizaje</h2>
+          <p class="section-sub">Todo se guarda localmente en tu navegador. Vuelve cuando quieras y continúa donde lo dejaste.</p>
+        </div>
+        <a href="pages/favoritos.html" class="btn btn-ghost btn-sm">Mis favoritos</a>
+      </div>
+
+      <div class="grid" style="grid-template-columns: 1.4fr 1fr;gap:20px" id="dashboard-grid">
+        <div class="card" id="dash-overall-card">
+          <div class="between mb-4">
+            <h3>Progreso general</h3>
+            <span class="chip" id="dash-pct-chip">0%</span>
+          </div>
+          <div class="progress-track mb-4"><div class="progress-fill" id="dash-progress-fill" style="width:0%"></div></div>
+          <p class="muted" id="dash-overall-text" style="font-size:0.88rem">Tu nivel general de aprendizaje se calcula combinando nombres aprendidos, quiz realizado, dhikr y recorrido completado.</p>
+        </div>
+        <div class="card">
+          <h3>Contenido recomendado</h3>
+          <div id="dash-recommend" style="margin-top:14px;display:flex;flex-direction:column;gap:10px"></div>
+        </div>
+      </div>
+
+      <div class="grid grid-4" style="margin-top:20px" id="dash-stats">
+        <div class="card stat-card">
+          <div class="stat-value" id="dash-learned">0/99</div>
+          <small>Nombres de Allah aprendidos</small>
+        </div>
+        <div class="card stat-card">
+          <div class="stat-value" id="dash-dhikr">0</div>
+          <small>Recuerdos de dhikr</small>
+        </div>
+        <div class="card stat-card">
+          <div class="stat-value" id="dash-favs">0</div>
+          <small>Favoritos guardados</small>
+        </div>
+        <div class="card stat-card">
+          <div class="stat-value" id="dash-quiz">0%</div>
+          <small>Mejor resultado del quiz</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DEL DÍA ===== -->
+  <section class="section" style="padding-top:20px">
+    <div class="container">
+      <div class="grid grid-3" id="daily-row">
+        <div class="daily-card reveal" id="daily-name">
+          <span class="eyebrow">Nombre de Allah del día</span>
+          <div style="text-align:center;padding:6px 0" id="daily-name-content">…</div>
+        </div>
+        <div class="daily-card reveal" data-delay="1" id="daily-verse">
+          <span class="eyebrow">Verso del día</span>
+          <div style="padding:6px 0" id="daily-verse-content">…</div>
+        </div>
+        <div class="daily-card reveal" data-delay="2" id="daily-dua">
+          <span class="eyebrow">Dua del día</span>
+          <div id="daily-dua-content" style="padding:6px 0">…</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPLORAR ===== -->
+  <section class="section">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:40px">
+        <span class="eyebrow" style="justify-content:center">Explora la plataforma</span>
+        <h2 class="section-title">Todo lo que puedes aprender</h2>
+        <p class="section-sub" style="margin:10px auto 0">Dieciocho secciones cuidadosamente organizadas para un aprendizaje completo y ordenado.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <a href="pages/nombres-allah.html" class="glass-tile gt-emerald reveal">
+          <div class="gt-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M3 12h18"/></svg></div>
+          <h3>99 Nombres de Allah</h3>
+          <p>Cada nombre con su árabe, significado, explicación y reflexión. Con buscador, filtros y progreso.</p>
+          <span class="card-link">Explorar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </a>
+        <a href="pages/profetas.html" class="glass-tile reveal" data-delay="1">
+          <div class="gt-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+          <h3>Historia de los Profetas</h3>
+          <p>Las historias de los profetas con sus enseñanzas, distinguiendo siempre Corán, hadiz y tradición.</p>
+          <span class="card-link">Explorar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </a>
+        <a href="pages/quran.html" class="glass-tile gt-emerald reveal" data-delay="2">
+          <div class="gt-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+          <h3>El Corán</h3>
+          <p>Suras, versos clasificados por tema, traducción en español y modo lectura cómodo.</p>
+          <span class="card-link">Explorar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </a>
+        <a href="pages/oracion.html" class="glass-tile reveal">
+          <div class="gt-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z"/><path d="M12 6v6l4 2"/></svg></div>
+          <h3>La Oración (Salah)</h3>
+          <p>Las cinco oraciones, sus rak'ahs y una guía paso a paso con árabe, transliteración y traducción.</p>
+          <span class="card-link">Explorar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </a>
+        <a href="pages/wudu.html" class="glass-tile gt-emerald reveal" data-delay="1">
+          <div class="gt-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></div>
+          <h3>El Wudu</h3>
+          <p>Guía interactiva paso a paso con imágenes, duda frecuentes y explicaciones de las escuelas.</p>
+          <span class="card-link">Explorar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </a>
+        <a href="pages/duas.html" class="glass-tile reveal" data-delay="2">
+          <div class="gt-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <h3>Duas (súplicas)</h3>
+          <p>Biblioteca de duas auténticas por categoría, con árabe, transliteración, traducción y fuente.</p>
+          <span class="card-link">Explorar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </a>
+        <a href="pages/pilares.html" class="glass-tile gt-emerald reveal">
+          <div class="gt-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V8l7-5 7 5v13"/></svg></div>
+          <h3>Los Cinco Pilares</h3>
+          <p>Shahada, Salah, Zakat, Sawm y Hajj explicados con sus referencias e importancia.</p>
+          <span class="card-link">Explorar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </a>
+        <a href="pages/dhikr.html" class="glass-tile reveal" data-delay="1">
+          <div class="gt-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg></div>
+          <h3>Dhikr interactivo</h3>
+          <p>Contador de recuerdos de Allah con objetivos, historial y estadísticas guardadas.</p>
+          <span class="card-link">Explorar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </a>
+        <a href="pages/historia.html" class="glass-tile gt-emerald reveal" data-delay="2">
+          <div class="gt-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="10"/></svg></div>
+          <h3>Historia del Islam</h3>
+          <p>Recorre las grandes épocas de la civilización islámica en una línea temporal visual.</p>
+          <span class="card-link">Explorar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CÓMO FUNCIONA ===== -->
+  <section class="section" style="background:var(--bg-soft);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:40px">
+        <span class="eyebrow" style="justify-content:center">Diseñado para ti</span>
+        <h2 class="section-title">Aprende a tu ritmo, con confianza</h2>
+      </div>
+      <div class="grid grid-4">
+        <div class="strip-card reveal"><div><b>Contenido fiable</b><small>Basado en el Corán, hadices auténticos y fuentes reconocidas.</small></div></div>
+        <div class="strip-card reveal" data-delay="1"><div class="sc-ic g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div><div><b>Sin instalación</b><small>Funciona al abrir index.html, sin servidores ni registros.</small></div></div>
+        <div class="strip-card reveal" data-delay="2"><div><b>Tu progreso se guarda</b><small>Nombres aprendidos, quiz, dhikr y favoritos en tu navegador.</small></div></div>
+        <div class="strip-card reveal" data-delay="3"><div class="sc-ic g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></div><div><b>Transparencia</b><small>Diferenciamos siempre entre Corán, hadiz y relatos tradicionales.</small></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="card" style="padding:48px 28px;text-align:center;background:linear-gradient(150deg, rgba(201,164,92,.08), rgba(47,191,143,.05)), var(--bg-card)">
+        <h2 class="section-title">Empieza tu viaje de aprendizaje</h2>
+        <p class="section-sub" style="margin:12px auto 26px">El mejor día para aprender sobre tu religión es hoy. Empieza con una ruta guiada pensada para ti.</p>
+        <div class="flex" style="justify-content:center">
+          <a href="pages/comenzar.html" class="btn btn-gold">Empezar la ruta de aprendizaje</a>
+          <a href="pages/faq.html" class="btn btn-ghost">Resolver mis dudas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand"><span class="brand-mark">ن</span><span>Nur<small>Plataforma Islámica</small></span></a>
+          <p>Una plataforma educativa para aprender sobre el Islam de forma clara, moderna y fiable, basada en fuentes auténticas. Desarrollada con HTML, CSS y JavaScript puro.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Aprender</h4>
+          <a href="pages/comenzar.html">Empezar aquí</a>
+          <a href="pages/pilares.html">Los cinco pilares</a>
+          <a href="pages/oracion.html">La oración</a>
+          <a href="pages/wudu.html">El wudu</a>
+          <a href="pages/quran.html">El Corán</a>
+        </div>
+        <div class="footer-col">
+          <h4>Explorar</h4>
+          <a href="pages/nombres-allah.html">Nombres de Allah</a>
+          <a href="pages/profetas.html">Profetas</a>
+          <a href="pages/historia.html">Historia</a>
+          <a href="pages/ciencia.html">Ciencia islámica</a>
+          <a href="pages/glosario.html">Glosario</a>
+        </div>
+        <div class="footer-col">
+          <h4>Herramientas</h4>
+          <a href="pages/duas.html">Duas</a>
+          <a href="pages/dhikr.html">Dhikr</a>
+          <a href="pages/quiz.html">Quiz</a>
+          <a href="pages/favoritos.html">Favoritos</a>
+          <a href="pages/faq.html">Preguntas frecuentes</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Nur · Plataforma educativa independiente.</span>
+        <span>Hecho con respeto hacia el conocimiento islámico.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== SEARCH OVERLAY ===== -->
+  <div class="search-overlay" role="dialog" aria-label="Buscador global">
+    <div class="search-panel">
+      <div class="search-input-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input type="text" placeholder="Buscar nombres, profetas, versos, duas, términos…" autocomplete="off">
+        <span class="chip">Ctrl+K</span>
+      </div>
+      <div class="search-results"></div>
+      <div class="search-footer">Busca en toda la plataforma: 99 nombres, profetas, versos del Corán, duas y glosario.</div>
+    </div>
+  </div>
+
+  <!-- ===== MODAL ===== -->
+  <div class="modal-overlay" role="dialog" aria-label="Ventana">
+    <div class="modal">
+      <div class="modal-head"><h3>Título</h3><button class="modal-close" aria-label="Cerrar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg></button></div>
+      <div class="modal-body"></div>
+      <div class="modal-actions">
+        <button class="btn btn-ghost btn-sm modal-close">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <button class="back-top" aria-label="Subir"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+</div>
+
+<script src="js/main.js" defer></script>
+<script src="js/favorites.js" defer></script>
+<script src="js/progress.js" defer></script>
+<script src="js/search.js" defer></script>
+<script src="js/data-names.js" defer></script>
+<script src="js/data-prophets.js" defer></script>
+<script src="js/data-quran.js" defer></script>
+<script src="js/data-duas.js" defer></script>
+<script src="js/data-glossary.js" defer></script>
+<script src="js/data-quiz.js" defer></script>
+<script src="js/home.js" defer></script>
+</body>
+</html>

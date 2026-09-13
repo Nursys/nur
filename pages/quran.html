@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Corán — Versos y Suras | Nur</title>
+  <meta name="description" content="El Sagrado Corán: lista de suras, versos clasificados por temas, traducción al español y herramientas de favoritos, copiar y modo lectura.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E☪%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+<div id="app">
+
+  <header class="navbar site-header">
+    <div class="nav-inner">
+      <a href="../index.html" class="brand"><span class="brand-mark">ن</span><span>Nur<small>Plataforma Islámica</small></span></a>
+      <nav class="nav-links" aria-label="Principal">
+        <a href="../index.html">Inicio</a>
+        <a href="nombres-allah.html">Allah</a>
+        <a href="profetas.html">Profetas</a>
+        <a href="quran.html" class="active">Corán</a>
+        <a href="oracion.html">Oración</a>
+        <a href="wudu.html">Wudu</a>
+        <a href="duas.html">Duas</a>
+        <a href="dhikr.html">Dhikr</a>
+        <a href="historia.html">Historia</a>
+        <a href="quiz.html">Quiz</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#" class="icon-btn open-search" title="Buscar (Ctrl+K)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg></a>
+        <a href="favoritos.html" class="icon-btn hide-mobile" title="Favoritos"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></a>
+        <button class="icon-btn theme-toggle" title="Tema"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+        <button class="icon-btn menu-burger" aria-label="Menú"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-menu" aria-label="Menú móvil">
+    <a href="../index.html">Inicio</a>
+    <a href="comenzar.html">Empezar aquí</a>
+    <a href="nombres-allah.html">Nombres de Allah</a>
+    <a href="profetas.html">Profetas</a>
+    <a href="quran.html" class="active">Corán</a>
+    <a href="oracion.html">Oración</a>
+    <a href="wudu.html">Wudu</a>
+    <a href="duas.html">Duas</a>
+    <a href="dhikr.html">Dhikr</a>
+    <a href="pilares.html">Pilares</a>
+    <a href="historia.html">Historia</a>
+    <a href="quiz.html">Quiz</a>
+    <div class="mm-actions"><a href="#" class="btn btn-gold open-search" style="width:100%">Buscar</a></div>
+  </nav>
+
+  <main class="page-wrap">
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="../index.html">Inicio</a><span class="sep">/</span><span>Corán</span></div>
+        <h1>El Sagrado Corán</h1>
+        <p class="section-sub" style="margin-top:10px">La palabra de Allah, revelada al Profeta Muhammad ﷺ a través del ángel Gabriel. Explora las suras, busca versos por tema y guárdalos en tus favoritos. La traducción al español sigue la edición del Complejo del rey Fahd.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:40px">
+      <div class="container">
+        <div class="tabs mb-4" data-tab-group="quran">
+          <button class="tab-btn active" data-tab="temas">Versos por tema</button>
+          <button class="tab-btn" data-tab="suras">Lista de suras</button>
+        </div>
+
+        <div class="tab-panel active" data-tab="quran" data-tab-content="temas">
+          <div class="mb-4 flex">
+            <div class="tabs" id="quran-cats" style="flex-wrap:wrap;background:none;border:none;padding:0">
+              <button class="chip active" data-cat="all">Todos</button>
+            </div>
+          </div>
+          <div class="grid" id="quran-verses" style="grid-template-columns:repeat(2,1fr)"></div>
+        </div>
+
+        <div class="tab-panel" data-tab="quran" data-tab-content="suras">
+          <div class="field mb-4" style="max-width:420px">
+            <input type="text" class="search-box" id="sura-search" placeholder="Buscar sura…" data-filter="sura-item">
+          </div>
+          <div id="suras-list" style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom"><span>© 2026 Nur · Plataforma educativa independiente.</span><span><a href="../index.html">Volver al inicio</a></span></div>
+    </div>
+  </footer>
+
+  <div class="search-overlay" role="dialog" aria-label="Buscador global">
+    <div class="search-panel">
+      <div class="search-input-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg><input type="text" placeholder="Buscar…" autocomplete="off"><span class="chip">Ctrl+K</span></div>
+      <div class="search-results"></div>
+      <div class="search-footer">Buscador global de la plataforma.</div>
+    </div>
+  </div>
+
+  <button class="back-top" aria-label="Subir"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+</div>
+
+<script src="../js/main.js" defer></script>
+<script src="../js/favorites.js" defer></script>
+<script src="../js/progress.js" defer></script>
+<script src="../js/search.js" defer></script>
+<script src="../js/data-quran.js" defer></script>
+<script src="../js/quran.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Wudu — Guía Interactiva de la Ablución | Nur</title>
+  <meta name="description" content="Aprende a realizar el wudu (ablución) paso a paso: intención, manos, boca, nariz, rostro, brazos, cabeza, orejas y pies. Incluye qué invalida el wudu y cuándo hace falta ghusl.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E☪%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+<div id="app">
+
+  <header class="navbar site-header">
+    <div class="nav-inner">
+      <a href="../index.html" class="brand"><span class="brand-mark">ن</span><span>Nur<small>Plataforma Islámica</small></span></a>
+      <nav class="nav-links" aria-label="Principal">
+        <a href="../index.html">Inicio</a>
+        <a href="nombres-allah.html">Allah</a>
+        <a href="profetas.html">Profetas</a>
+        <a href="quran.html">Corán</a>
+        <a href="oracion.html">Oración</a>
+        <a href="wudu.html" class="active">Wudu</a>
+        <a href="duas.html">Duas</a>
+        <a href="dhikr.html">Dhikr</a>
+        <a href="historia.html">Historia</a>
+        <a href="quiz.html">Quiz</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#" class="icon-btn open-search" title="Buscar (Ctrl+K)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg></a>
+        <a href="favoritos.html" class="icon-btn hide-mobile" title="Favoritos"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></a>
+        <button class="icon-btn theme-toggle" title="Tema"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+        <button class="icon-btn menu-burger" aria-label="Menú"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-menu" aria-label="Menú móvil">
+    <a href="../index.html">Inicio</a>
+    <a href="comenzar.html">Empezar aquí</a>
+    <a href="nombres-allah.html">Nombres de Allah</a>
+    <a href="profetas.html">Profetas</a>
+    <a href="quran.html">Corán</a>
+    <a href="oracion.html">Oración</a>
+    <a href="wudu.html" class="active">Wudu</a>
+    <a href="duas.html">Duas</a>
+    <a href="dhikr.html">Dhikr</a>
+    <a href="pilares.html">Pilares</a>
+    <a href="historia.html">Historia</a>
+    <a href="quiz.html">Quiz</a>
+    <div class="mm-actions"><a href="#" class="btn btn-gold open-search" style="width:100%">Buscar</a></div>
+  </nav>
+
+  <main class="page-wrap">
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="../index.html">Inicio</a><span class="sep">/</span><span>Wudu</span></div>
+        <h1>El Wudu — La ablución</h1>
+        <p class="section-sub" style="margin-top:10px">Allah dice: «¡Creyentes! Cuando os levantéis para hacer la oración, lavad vuestras caras y las manos hasta los codos, pasad las manos por vuestras cabezas y lavaos los pies hasta los tobillos» (Corán 5:6). El wudu es la purificación ritual menor que precede a la oración.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:40px">
+      <div class="container">
+        <h2 class="section-title" id="guia">Guía interactiva del wudu</h2>
+        <p class="muted mb-6">Sigue las etapas en orden. La base es el versículo 5:6 del Corán y la práctica enseñada por el Profeta ﷺ.</p>
+
+        <div class="grid" style="grid-template-columns:1.3fr .7fr;gap:20px" id="wudu-layout">
+          <div>
+            <div class="card" style="padding:26px">
+              <div id="wudu-step-content"></div>
+              <div class="stepper mt-6">
+                <button class="btn btn-ghost btn-sm" id="wudu-prev">← Anterior</button>
+                <span class="step-label" id="wudu-step-label">Paso 1 / 10</span>
+                <button class="btn btn-gold btn-sm" id="wudu-next">Siguiente →</button>
+              </div>
+              <div class="progress-track mt-4"><div class="progress-fill emerald" id="wudu-progress" style="width:0%"></div></div>
+            </div>
+          </div>
+          <div>
+            <div class="card" id="wudu-mini-steps">
+              <h3>Tu recorrido</h3>
+              <div id="wudu-mini-list" style="margin-top:14px;display:flex;flex-direction:column;gap:8px"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-2 mt-6" style="margin-top:36px">
+          <div class="card reading-content" id="wudu-cancel">
+            <h3>¿Qué invalida el wudu?</h3>
+            <ul class="muted" style="padding-left:20px;font-size:0.9rem;margin-top:8px;display:flex;flex-direction:column;gap:6px">
+              <li>La salida de orina, heces o gases.</li>
+              <li>Cualquier flujo que salga del cuerpo (sangre en cantidad, según diferencia de opinión).</li>
+              <li>Dormir profundamente, cuando se pierde la conciencia de lo que pasa (hay diferencias: suele indicarse el sueño profundo).</li>
+              <li>Perder el conocimiento (desmayo, embriaguez, enfermedad grave).</li>
+              <li>Tocar la zona íntima directamente con la mano sin barrera (según varias escuelas; otras lo consideran simplemente recomendable reforzar).</li>
+            </ul>
+            <p class="dim" style="font-size:0.78rem;margin-top:8px">Nota: comer o beber no invalida el wudu. Hay diferencias de opinión entre escuelas sobre algunos puntos; se indica lo más extendido.</p>
+          </div>
+          <div class="card reading-content" id="wudu-ghusl">
+            <h3>¿Cuándo hay que hacer ghusl (baño completo)?</h3>
+            <ul class="muted" style="padding-left:20px;font-size:0.9rem;margin-top:8px;display:flex;flex-direction:column;gap:6px">
+              <li>Tras la emanación seminal (con orgasmo o sin él).</li>
+              <li>Tras la relación conyugal.</li>
+              <li>Al terminar el ciclo menstrual y el sangrado posparto (istiḥada requiere otro tratamiento según cada mujer).</li>
+              <li>Recomendado el viernes, en las dos festividades y al abrazar el Islam según muchas escuelas.</li>
+            </ul>
+            <p class="dim" style="font-size:0.78rem;margin-top:8px">El ghusl sustituye al wudu: te purificas en estado de impureza mayor. El wudu solo se realiza en impureza menor.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-2 mt-4" style="margin-top:24px">
+          <div class="card reading-content">
+            <h3>Errores comunes</h3>
+            <ul class="muted" style="padding-left:20px;font-size:0.9rem;margin-top:8px;display:flex;flex-direction:column;gap:6px">
+              <li>Gastar agua en exceso: el Profeta ﷺ dijo que el despilfarro está vedado (Ibn Majah; autenticidad debatida en su isnaad, aunque es una actitud alabada).</li>
+              <li>Salpicar sin lavar realmente las partes obligatorias.</li>
+              <li>Marcar cada paso con exceso mientras se duda de falsas invalidaciones.</li>
+              <li>Olvidar el masah (pasar la mano húmeda) de la cabeza.</li>
+            </ul>
+          </div>
+          <div class="card reading-content">
+            <h3>Sin agua disponible</h3>
+            <p class="muted" style="font-size:0.9rem;margin-top:8px">Cuando no hay agua o su uso es perjudicial, se realiza el <b>tayammum</b>: tocar tierra o polvo limpio con las manos y pasar sobre la cara y las manos. Lo establece el Corán 5:6: «…no encontréis agua, recurrid a tierra limpia».</p>
+            <p class="dim" style="font-size:0.78rem;margin-top:8px">Es una concesión de Allah para la facilidad; no sustituye al wudu cuando hay agua.</p>
+          </div>
+        </div>
+
+        <hr class="divider" style="margin:44px 0">
+        <div class="accordion" id="wudu-faq">
+          <div class="acc-item"><button class="acc-head">¿Por qué se hace el wudu antes de la oración?<span class="acc-chev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span></button><div class="acc-body"><div class="acc-body-inner">Porque Allah lo ordena (Corán 5:6) y porque la pureza es condición de la validez de la oración. El Profeta ﷺ enseñó que la oración no se acepta sin purificación (Muslim 224).</div></div></div>
+          <div class="acc-item"><button class="acc-head">¿Cuántas veces debe lavarse cada parte?<span class="acc-chev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span></button><div class="acc-body"><div class="acc-body-inner">La práctica del Profeta ﷺ fue normalmente lavar una o tres veces; lo esencial es que cada parte quede cubierta y lavada. Lavar tres veces es lo más completo documentado.</div></div></div>
+          <div class="acc-item"><button class="acc-head">¿Difiere el wudu entre las escuelas jurídicas?<span class="acc-chev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span></button><div class="acc-body"><div class="acc-body-inner">Sí, en detalles: el orden estricto (algunas lo consideran obligatorio), el masah sobre el calzado (masah 'ala al-khuffayn, admitido por la mayoría con condiciones), el lavado del cuello (no obligatorio) y el enjuague bucal/nasal (sunnah para varias escuelas). La base obligatoria es común: cara, manos hasta codos, cabeza y pies.</div></div></div>
+          <div class="acc-item"><button class="acc-head">¿Se puede rezar con wudu de la oración anterior?<span class="acc-chev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span></button><div class="acc-body"><div class="acc-body-inner">Sí, mientras no ocurra lo que lo invalida. Muchos musulmanes renuevan el wudu en cada oración por precaución y porque es una práctica alabada.</div></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom"><span>© 2026 Nur · Plataforma educativa independiente.</span><span><a href="../index.html">Volver al inicio</a></span></div>
+    </div>
+  </footer>
+
+  <div class="search-overlay" role="dialog" aria-label="Buscador global">
+    <div class="search-panel">
+      <div class="search-input-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.3-4.3"/></svg><input type="text" placeholder="Buscar…" autocomplete="off"><span class="chip">Ctrl+K</span></div>
+      <div class="search-results"></div>
+      <div class="search-footer">Buscador global de la plataforma.</div>
+    </div>
+  </div>
+
+  <button class="back-top" aria-label="Subir"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+</div>
+
+<script src="../js/main.js" defer></script>
+<script src="../js/favorites.js" defer></script>
+<script src="../js/progress.js" defer></script>
+<script src="../js/search.js" defer></script>
+<script src="../js/wudu.js" defer></script>
+</body>
+</html>
